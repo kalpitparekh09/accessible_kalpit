@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -13,11 +13,22 @@
 	<link href="styles/before-form.css" rel="stylesheet">
 	<link href="styles/before-modal.css" rel="stylesheet">
 	<link href="styles/before-hero.css" rel="stylesheet">
-  <!-- <script src="scripts/bootstrap.bundle.min.js"></script> -->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
 	<script src="scripts/before-menu.js"></script>
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
 	<script src="scripts/before-hero.js"></script>
+  <style>
+
+    a {
+
+  color: #0074D9;
+
+
+
+  }
+
+  </style>
 </head>
 <body>
   <div id="content">
@@ -30,7 +41,7 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" alt="Logo Image" class="d-block"/>
       </a>
     </div>
 
@@ -46,11 +57,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
-                  About
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                About
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">News</a></li>
                 <li><a class="dropdown-item" href="#">Governance</a></li>
                 <li><a class="dropdown-item" href="#">Diversity</a></li>
@@ -145,8 +155,8 @@
 
               <div class="heading">Can you spot the barriers?</div>
               <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/> There are at least 18 accessibility issues on this page.
-                To see a list of all known issues, <a href="issues.html">click here</a>.
-                To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
+                To see a list of all <a href="issues.html">known Accessibility issues</a>.
+                To see a <a href="after_u.html">more accessible version </a> of this same page, click here.
                 To view a popup list of accessibility issues:</p>
                 <a class="btn btn-primary" href="cheatsheet.html">click here</a>
 
@@ -227,12 +237,12 @@
                 <div class="heading">Events</div>
 
                 <h6>December 1</h6>
-                <h5><a href="#">A great holiday event</a></h4>
+                <p><a href="#">A great holiday event</a></p>
 
                 <p>Don't miss this event.</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
                 <h6>December 31</h6>
-                <h5><a href="#">New years eve party</a></h4>
+                <p><a href="#">New years eve party</a></p>
                 <p>Ring in the new year with your friends</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
               </div>
@@ -246,17 +256,16 @@
 
                   <!-- container for displaying form errors -->
                   <div id="error"></div>
-
-                  <div class="required form-group">
-                    Name:
-                    <input type="text" name="name" class="form-control" />
+                  <div class="form-group">
+                    <label for="name">Name<span class="required">*</span>:</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
                   </div>
-                  <div class="required form-group">
-                    Email:
-                    <input type="text" name="email" class="form-control" />
+                  <div class=" form-group">
+                    <Label for="Email">Email<span class="required">*</span></Label>:
+                    <input type="text" id="email" name="email" class="form-control" required />
                   </div>
                   <div class="form-group">
-                    Country:
+                    <label for="country">Country:</label>
                     <input type="text" name="country" class="form-control" />
                   </div>
                   <div class="form-group">
@@ -348,7 +357,7 @@
     <button class="btn btn-primary" type="button" id="modalOkButton">OK</button>
   </div>
 
-  <div id="footer" role="bottom" aria-foo="yes"><span>.</div>
+  <div id="footer" role="contentinfo"><span>.</span></div>
 
 </body>
 </html>
